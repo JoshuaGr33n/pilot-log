@@ -1,0 +1,24 @@
+# pyproject.toml
+
+[tool.pre_commit]
+version = '2.15.0'
+hooks = [
+  'black',
+  'flake8',
+  'isort',
+  'mypy',
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py37']
+
+[tool.isort]
+profile = 'black'
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = E203, W503  # Adjust to your preferences
+
+[tool.mypy]
+plugins = ["mypy_django_plugin.main"]
