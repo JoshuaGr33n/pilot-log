@@ -3,7 +3,7 @@ from .base_importer import BaseImporter
 from ..serializers import PilotSerializer, FlightSerializer
 from ..models import Pilot, Flight
 
-class YourModelImporter(BaseImporter):
+class ModelImporter(BaseImporter):
     def import_pilots(self, pilots_data):
         for pilot_data in pilots_data:
             pilot, created = Pilot.objects.get_or_create(

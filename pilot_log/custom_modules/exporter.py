@@ -4,7 +4,7 @@ from ..models import Flight
 from ..serializers import FlightSerializer
 
 
-class YourModelExporter(BaseExporter):
+class ModelExporter(BaseExporter):
     model = Flight  
     serializer_class = FlightSerializer 
 

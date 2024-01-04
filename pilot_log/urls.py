@@ -1,11 +1,11 @@
 #pilot_log/urls.py
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from .views import YourModelViewSet
+from .views import ModelViewSet
 
 
 router = DefaultRouter()
-router.register(r'', YourModelViewSet, basename='')
+router.register(r'', ModelViewSet, basename='')
 
 
 urlpatterns = [
@@ -14,6 +14,6 @@ urlpatterns = [
 
 
 urlpatterns += [
-    path('import/', YourModelViewSet.as_view({'post': 'create'}), name='import'),
-    path('export/', YourModelViewSet.as_view({'get': 'list'}), name='export'),
+    path('import/', ModelViewSet.as_view({'post': 'create'}), name='import'),
+    path('export/', ModelViewSet.as_view({'get': 'list'}), name='export'),
 ]
