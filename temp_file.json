@@ -1,0 +1,38 @@
+{
+  "pilots": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "created_at": "2023-01-01T12:00:00Z",
+      "updated_at": "2023-01-01T14:30:00Z"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "created_at": "2023-02-01T09:45:00Z",
+      "updated_at": "2023-02-01T11:20:00Z"
+    }
+  ],
+  "flights": [
+    {
+      "id": 1,
+      "pilot": 1,
+      "date": "2023-01-10",
+      "duration": "PT2H30M",
+      "created_at": "2023-01-10T15:00:00Z",
+      "updated_at": "2023-01-10T17:30:00Z"
+    },
+    {
+      "id": 2,
+      "pilot": 2,
+      "date": "2023-02-15",
+      "duration": "PT1H45M",
+      "created_at": "2023-02-15T11:30:00Z",
+      "updated_at": "2023-02-15T13:15:00Z"
+    }
+  ]
+}
+
+
+
+
