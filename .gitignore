@@ -1,0 +1,28 @@
+# Ignore database and SQLite files
+*.sqlite3
+db.sqlite3
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore environment-specific settings
+*.env
+
+# Ignore logs and other generated files
+logs/
+*.log
+*.pot
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore the virtual environment directory
+venv/
+
+# Ignore local settings file
+local_settings.py
+
+# Ignore sensitive configuration files
+config/*.ini
